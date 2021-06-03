@@ -1,41 +1,45 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { userContext } from '../../App';
-import './Header.css'
+import header from '../../images/header.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faShoppingCart, faHome } from '@fortawesome/free-solid-svg-icons';
+import './Header.css';
 
 const Header = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     return (
-        <div className="container">
-            <nav class="navbar navbar-expand-lg navbar-light mb-5">
-                <div class="container-fluid">
-                    <Link className="header" to="/home"><strong>PONNO BILASH</strong></Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <li>
-                                <Link className="header" to="/home">Home</Link>
-                            </li>
-                            <li>
-                                <Link className="header" to="/orders">Orders</Link>
-                            </li>
-                            <li>
-                                <Link className="header" to="/admin">Admin</Link>
-                            </li>
-                            <li>
-                                <Link className="header" to="/home">Deals</Link>
-                            </li>
-                            <li>
-                                <Link className="header" to="/login">
-                                    {loggedInUser.displayName || loggedInUser.displayName || loggedInUser.name || <button className="btn btn-danger btn-sm">Login</button>}
-                                </Link>
-                            </li>
+        <div className="container bg-white">
+            <div className='header'>
+                <div className="row d-flex align-items-center">
+                    <div className="col-md-4">
+                        <img src={header} alt="" />
+                    </div>
+                    <div className="col-md-4 input-group m-auto">
+                        <input type="text" name="" id="" placeholder="Search our catalog" className="form-control w-25" />
+                        <div class="input-group-append">
+                            <button style={{backgroundColor: "rgb(119, 194, 7)", color: "white", border: "none", width: "40px"}} type="button"><FontAwesomeIcon icon={faSearch} /></button>
                         </div>
                     </div>
+                    <div className="col-md-4 d-none d-lg-block cart">
+                        <a class="cart_link text-white" rel="nofollow" href="">
+                        <FontAwesomeIcon icon={faShoppingCart} className="mr-2"/>
+                            <span class="hidden-sm-down cart_title">Cart:</span>
+                            <span class="cart-products-count">
+                                0<span> Products - BDT&nbsp;0</span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-            </nav>
+                <nav>
+                    <Link to="/"><FontAwesomeIcon icon={faHome} /></Link>
+                    <Link to="/orders">Orders</Link>
+                    <Link to="/admin">Admin</Link>
+                    <Link className="header" to="/login">
+                        {loggedInUser.displayName || loggedInUser.displayName || loggedInUser.name || <button className="btn btn-danger btn-sm">Login</button>}
+                    </Link>
+                </nav>
+            </div>
         </div>
     );
 };

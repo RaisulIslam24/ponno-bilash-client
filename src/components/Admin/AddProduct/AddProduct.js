@@ -1,9 +1,10 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import Sidebar from '../Sidebar/Sidebar';
 
-const Admin = () => {
-    const {register, handleSubmit} = useForm();
+const AddProduct = () => {
+    const { register, handleSubmit } = useForm();
     const [imageUrl, setImageUrl] = useState(null);
 
     const onSubmit = data => {
@@ -14,7 +15,7 @@ const Admin = () => {
             price: data.price
         };
         const url = `https://dry-lowlands-50399.herokuapp.com/addProduct`;
-        
+
         fetch(url, {
             method: 'POST',
             headers: {
@@ -22,7 +23,7 @@ const Admin = () => {
             },
             body: JSON.stringify(eventData)
         })
-        .then(res => console.log('server side response', res))
+            .then(res => console.log('server side response', res))
     };
     const handleImageUpload = event => {
         const imageData = new FormData();
@@ -30,43 +31,39 @@ const Admin = () => {
         imageData.append('image', event.target.files[0]);
 
         axios.post('https://api.imgbb.com/1/upload',
-        imageData)
-          .then(function (response) {
-            setImageUrl(response.data.data.display_url);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+            imageData)
+            .then(function (response) {
+                setImageUrl(response.data.data.display_url);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }
 
     return (
         <div className="container">
             <div className="row">
-                <div className="col-3 bg-dark p-2">
-                    <button className="btn btn-danger text-white w-100 mb-1">Manage Product</button>
-                    <br />
-                    <button className="btn btn-danger text-white w-100 mb-1">Add Product</button>
-                    <br />
-                    <button className="btn btn-danger text-white w-100 mb-1">Edit Product</button>
+                <div className="col-3">
+                    <Sidebar></Sidebar>
                 </div>
                 <div className="col-9 shadow p-3 bg-light">
                     <div>
                         <h3>Add Product</h3>
-                        <br/>
+                        <br />
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <h5>Product Name</h5>
-                            <input name="name" ref={register} className="form-control"/>
-                            <br/>
+                            <input name="name" ref={register} className="form-control" />
+                            <br />
                             <h5>Weight</h5>
-                            <input name="weight" ref={register} className="form-control"/>
-                            <br/>
+                            <input name="weight" ref={register} className="form-control" />
+                            <br />
                             <h5>Add Price</h5>
-                            <input name="price" ref={register} className="form-control"/>
-                            <br/>
-                            <input type="file" onChange={handleImageUpload}/>
-                            <br/>
-                            <br/>
-                            <input className="btn btn-success" type="submit" value="Save"/>
+                            <input name="price" ref={register} className="form-control" />
+                            <br />
+                            <input type="file" onChange={handleImageUpload} />
+                            <br />
+                            <br />
+                            <input className="btn btn-success" type="submit" value="Save" />
                         </form>
                     </div>
                 </div>
@@ -75,4 +72,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default AddProduct;

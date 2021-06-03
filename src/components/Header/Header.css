@@ -1,9 +1,35 @@
-.header{
-    text-decoration: none;
-    color: black;
-    margin: 20px;
+.header img{
+    height: 80px;
 }
-.header:hover{
+.header{
+    text-align: center;
+}
+.header nav{
+    background-color: black;
+    line-height: 40px;
+    font-size: 20px;
+}
+nav a{
     text-decoration: none;
-    color: black;
+    color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+nav a:hover {
+    background-color: rgb(107, 175, 5);
+    text-decoration: none;
+    color: white;
+  }
+.cart{
+    text-align: right;
+    height: 20px;
+    width: 15px;
+}
+.cart:hover{
+    text-decoration: none;
+}
+.cart_link{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(119, 194, 7);
 }

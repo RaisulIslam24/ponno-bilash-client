@@ -6,13 +6,15 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Admin from "./components/Admin/Admin";
 import Checkout from "./components/Checkout/Checkout";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
-import Orders from "./components/Orders/Orders";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Admin from "./components/Admin/Admin/Admin";
+import AddProduct from "./components/Admin/AddProduct/AddProduct";
+import OrderList from "./components/Admin/OrderList/OrderList";
+import AdminOrderList from "./components/Admin/AdminOrderList/AdminOrderList";
 
 export const userContext = createContext();
 
@@ -36,9 +38,15 @@ function App() {
             <PrivateRoute path="/admin">
               <Admin />
             </PrivateRoute>
-            <PrivateRoute path="/orders">
-              <Orders />
-            </PrivateRoute>
+            <Route path="/AdminOrderList">
+              <AdminOrderList></AdminOrderList>
+            </Route>
+            <Route path="/orderList">
+              <OrderList></OrderList>
+            </Route>
+            <Route path="/addProduct">
+              <AddProduct></AddProduct>
+            </Route>
             <Route exact path="/">
               <Home />
             </Route>

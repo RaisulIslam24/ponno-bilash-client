@@ -10,8 +10,8 @@ const Product = ({ pd }) => {
     }
 
     return (
-        <div>
-            <div className="card shadow m-5">
+        <div >
+            <div className="card shadow m-2">
                 <img style={{ width: '200px' }} className="m-auto card-img-top"
                     src={pd.imageUrl} />
                 <div className="card-body">
