@@ -10,10 +10,10 @@ const Admin = () => {
     return (
         <section className="container">
             <div style={containerStyle} className="row">
-                <div className="col-md-3">
+                <div className="col-md-4">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-9">
+                <div className="col-md-8">
                     <h1>Welcome to Admin Page</h1>
                 </div>
             </div>

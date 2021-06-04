@@ -10,7 +10,7 @@ const Checkout = () => {
     const handleCheckout = () => {
         const orderDetails = { ...loggedInUser, product, orderTime: new Date() };
 
-        fetch('https://dry-lowlands-50399.herokuapp.com/addOrder', {
+        fetch('http://localhost:5000/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ const Checkout = () => {
     }
 
     useEffect(() => {
-        fetch('https://dry-lowlands-50399.herokuapp.com/product/' + id)
+        fetch('http://localhost:5000/product/' + id)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [id])

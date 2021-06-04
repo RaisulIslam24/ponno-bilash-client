@@ -14,7 +14,7 @@ const AddProduct = () => {
             weight: data.weight,
             price: data.price
         };
-        const url = `https://dry-lowlands-50399.herokuapp.com/addProduct`;
+        const url = `http://localhost:5000/addProduct`;
 
         fetch(url, {
             method: 'POST',
