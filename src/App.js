@@ -16,6 +16,7 @@ import AddProduct from "./components/Admin/AddProduct/AddProduct";
 import OrderList from "./components/Admin/OrderList/OrderList";
 import AdminOrderList from "./components/Admin/AdminOrderList/AdminOrderList";
 import MakeAdmin from "./components/Admin/MakeAdmin/MakeAdmin";
+import ManageProducts from "./components/Admin/Admin/ManageProducts/ManageProducts";
 
 export const userContext = createContext();
 
@@ -50,6 +51,9 @@ function App() {
             </Route>
             <Route path="/addProduct">
               <AddProduct></AddProduct>
+            </Route>
+            <Route path="/ManageProducts">
+              <ManageProducts></ManageProducts>
             </Route>
             <Route exact path="/">
               <Home />

@@ -7,7 +7,7 @@ const AdminOrderList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://polar-brushlands-49945.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

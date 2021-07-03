@@ -33,10 +33,11 @@ const Header = () => {
                 </div>
                 <nav>
                     <Link to="/"><FontAwesomeIcon icon={faHome} /></Link>
+                    <Link to="/categories">Categories</Link>
                     <Link to="/orders">Orders</Link>
                     <Link to="/admin">Admin</Link>
-                    <Link className="header" to="/login">
-                        {loggedInUser.displayName || loggedInUser.displayName || loggedInUser.name || <button className="btn btn-danger btn-sm">Login</button>}
+                    <Link to="/login">
+                        {loggedInUser.displayName || loggedInUser.displayName || loggedInUser.name || <span>Login</span>}
                     </Link>
                 </nav>
             </div>

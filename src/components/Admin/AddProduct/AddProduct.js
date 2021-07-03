@@ -14,7 +14,7 @@ const AddProduct = () => {
             weight: data.weight,
             price: data.price
         };
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://polar-brushlands-49945.herokuapp.com/addProduct`;
 
         fetch(url, {
             method: 'POST',

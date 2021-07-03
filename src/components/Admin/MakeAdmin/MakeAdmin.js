@@ -9,7 +9,7 @@ const MakeAdmin = () => {
         const formData = {
             email: data.email
         };
-        const url = `http://localhost:5000/addAnAdmin`;
+        const url = `https://polar-brushlands-49945.herokuapp.com/addAnAdmin`;
 
         fetch(url, {
             method: 'POST',

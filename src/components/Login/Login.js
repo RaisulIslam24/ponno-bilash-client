@@ -117,7 +117,7 @@ const Login = () => {
     }
 
     return (
-        <div className="login border rounded p-3 bg-light shadow">
+        <div className="container col-md-4 col-10 border rounded p-3 mt-5 bg-light shadow">
             <h3 className="text-center mb-2">{newUser ? 'Create an account' : 'Log in'}</h3>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">

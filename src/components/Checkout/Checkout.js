@@ -10,7 +10,7 @@ const Checkout = () => {
     const handleCheckout = () => {
         const orderDetails = { ...loggedInUser, product, orderTime: new Date() };
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://polar-brushlands-49945.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ const Checkout = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/product/' + id)
+        fetch('https://polar-brushlands-49945.herokuapp.com/product/' + id)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [id])
@@ -58,9 +58,11 @@ const Checkout = () => {
                         </tr>
                     </tbody>
                 </table>
+                <br />
+                <div className="text-center">
+                <input onClick={handleCheckout} className="btn btn-success" type="submit" value="Checkout" />
+                </div>
             </div>
-            <br />
-            <input onClick={handleCheckout} className="btn btn-success" type="submit" value="Checkout" />
         </div>
     );
 };
