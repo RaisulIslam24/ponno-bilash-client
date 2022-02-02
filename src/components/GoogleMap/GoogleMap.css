@@ -1,0 +1,15 @@
+.map-container{
+    background: white;
+}
+.google-map{
+    width:100%;
+    height:450px;
+}
+
+@media  (max-width: 468px) {
+    .map{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

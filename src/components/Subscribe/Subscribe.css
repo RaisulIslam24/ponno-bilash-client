@@ -1,0 +1,107 @@
+#contact{
+    background: white;
+ 
+}
+
+.subscribe-title{
+    color: #555;
+    font-size: 30px;
+}
+.rocket{
+    width: 32%;
+    height: 91px;
+}
+.contact-row {
+    display: flex; flex-wrap: wrap; align-items: center;
+  
+}
+.contact-left-col, .contact-right-col {
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+.contact-right-col img{
+    width: 100%; transition: transform 0.5s;
+}
+
+.contact-right-col:hover{
+    transform: translateY(10px)
+
+}
+
+
+.subs-form{
+    max-width: 350px;
+    margin-right: 15px 0;
+}
+
+.subs-form .subsInput{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #f14360e0; 
+    box-sizing: border-box;
+}
+.btn-box {
+    display: flex;
+    outline: none;
+    width: 100%;
+    justify-self: space-between;
+}
+.btn-box button{
+    flex-basis: 50%;
+    padding: 5px 0;
+    border: none;
+    background: #ff002dba;
+    border: 2px solid #f14360e0; 
+    margin: 2px;
+}
+.common-btn{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    transition: all .5s;
+}
+.common-btn:hover{
+    color: #000000c4;
+    background:#f14360e0;
+}
+
+.line-1 {
+    width: 15px;
+    height: 15px;
+   background: #f14360e0;
+   display: inline-block;
+
+}
+
+.line-2 {
+    width: 90px;
+    height: 1px;
+   background: #f14360e0;
+   display: inline-block;
+
+}
+
+.line-3 {
+    width: 60px;
+    height: 1px;
+   background: #f14360e0;
+   display: inline-block;
+
+}
+.line{
+    line-height: 10px;
+}
+
+@media (max-width: 468px){
+    .contact-left-col{
+        display: block;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .contact-right-col{
+        display: none;
+    }
+}

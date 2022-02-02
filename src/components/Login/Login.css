@@ -1,4 +1,8 @@
-.login{
-    margin: auto;
-    height: 30%;
+.login {
+  margin: auto;
+  height: 30%;
+  width: 30%;
+}
+.button {
+  border-radius: 50px;
 }

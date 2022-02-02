@@ -1,0 +1,73 @@
+.addProduct {
+  display: flex;
+}
+
+.addProductRight {
+  flex: 4;
+}
+
+.addProductForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.productUpdateIconRed {
+  cursor: pointer;
+  font-size: 24px !important;
+}
+.productUpdateIconGreen {
+  color: green;
+  cursor: pointer;
+  font-size: 24px !important;
+}
+
+.addProductItem {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.addProductItem > label > span {
+  margin-right: 20px;
+}
+
+.addProductItem > label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addProductItem > input {
+  padding: 10px;
+}
+
+.addProductItem > select {
+  padding: 10px;
+}
+
+.addProductButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .addProduct {
+    display: flex;
+    flex-direction: column;
+  }
+  .addProductItem {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

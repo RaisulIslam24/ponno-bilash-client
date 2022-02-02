@@ -1,0 +1,17 @@
+.adminOrderList {
+  display: flex;
+}
+
+.adminOrderListRight {
+  flex: 4;
+}
+.adminOrderListRightBottom {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .adminOrderList {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboardRight {
+  flex: 4;
+  margin-top: 50px;
+  margin-left: 18em;
+}
+
+.tableHeadBold {
+  font-weight: bold !important;
+}

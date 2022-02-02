@@ -1,0 +1,7 @@
+.consumers {
+  display: flex;
+}
+
+.consumersRight {
+  flex: 4;
+}

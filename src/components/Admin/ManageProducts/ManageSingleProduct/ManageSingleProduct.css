@@ -1,0 +1,132 @@
+.product {
+  display: flex;
+}
+
+.productRight {
+  flex: 4;
+  padding: 20px;
+}
+
+.productItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productAddButton {
+  width: 80px;
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.productTopRight {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 11px -1px #000000;
+  box-shadow: 0px 0px 11px -1px #000000;
+}
+
+.productInfoTop {
+  display: flex;
+  align-items: center;
+}
+
+.productInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productName {
+  font-weight: 600;
+}
+
+.productInfoItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfoValue {
+  font-weight: 300;
+}
+
+.productBottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 11px -1px #000000;
+  box-shadow: 0px 0px 11px -1px #000000;
+}
+
+.productForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productFormLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.productFormLeft > label {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.productFormLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.productFormLeft > select {
+  margin-bottom: 10px;
+}
+
+.productFormRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.productUpload {
+  display: flex;
+  align-items: center;
+}
+
+.productUploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.productUpdateIconRed {
+  cursor: pointer;
+  color: rgb(180, 167, 167);
+  font-size: 24px !important;
+}
+.productUpdateIconGreen {
+  color: green;
+  cursor: pointer;
+  font-size: 24px !important;
+}

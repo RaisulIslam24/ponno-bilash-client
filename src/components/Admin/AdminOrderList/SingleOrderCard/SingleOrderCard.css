@@ -1,0 +1,23 @@
+/*............
+........
+order details style
+........
+.............. */
+.text-bold {
+  font-weight: 700;
+}
+
+.dialogue-info {
+  display: flex;
+  flex: wrap;
+}
+
+.dialogue-service-info {
+  flex: 3;
+  padding: 20px;
+}
+
+.dialogue-consumer-info {
+  flex: 3;
+  padding: 20px;
+}

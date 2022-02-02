@@ -1,0 +1,67 @@
+.makeAdmin {
+  display: flex;
+}
+
+.makeAdminRight {
+  flex: 4;
+}
+
+.makeAdminForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.makeAdminIconRed {
+  cursor: pointer;
+  font-size: 24px !important;
+}
+.makeAdminIconGreen {
+  color: green;
+  cursor: pointer;
+  font-size: 24px !important;
+}
+
+.makeAdminItem {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.makeAdminItem > label > span {
+  margin-right: 20px;
+}
+
+.makeAdminItem > label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.makeAdminItem > input {
+  padding: 10px;
+}
+
+.makeAdminItem > select {
+  padding: 10px;
+}
+
+.makeAdminButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .makeAdmin {
+    display: flex;
+    flex-direction: column;
+  }
+}

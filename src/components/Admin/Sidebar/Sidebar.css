@@ -1,14 +1,56 @@
-.sidebar{
-    background-image: linear-gradient(40deg, #d8290a, tomato);
-    width: 300px;
+.sidebar {
+  flex: 1;
+  /* height: calc(100vh - 50px); */
+  height: 100vh;
+  /* background-color: rgb(251, 251, 255); */
+  background: rgb(98, 162, 189);
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  position: sticky;
+  top: 50px;
 }
-.sidebar li{
-    margin-bottom: 2em;
+
+.sidebarWrapper {
+  padding: 20px;
+  color: rgb(105, 102, 102);
 }
-.sidebar li:hover span{
-    display: inline-block;
-    transform: translate(5px);
+
+.sidebarMenu {
+  margin-bottom: 10px;
 }
-.sidebar svg{
-    margin-right: 5px;
+
+.sidebarTitle {
+  font-size: 13px !important;
+  color: rgb(66, 56, 56);
+  text-align: start;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* .sidebarListItem.active, .sidebarListItem:hover{
+      background-color: rgb(240, 240, 250);
+  } */
+.sidebarListItem:hover {
+  background-color: rgb(240, 240, 250);
+}
+
+.sidebarIcon {
+  margin-right: 5px;
+  font-style: 20px !important;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }

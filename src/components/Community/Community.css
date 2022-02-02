@@ -1,0 +1,30 @@
+.community {
+  color: white;
+  position: relative;
+  background-image: url(../../images/banner.jpg);
+  background-position: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+.community::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 54, 54, 0.5);
+  opacity: 0.9;
+  z-index: -1;
+}
+.head {
+  color: rgb(243, 203, 22);
+  font-weight: bold;
+}
+.community-btn {
+  font-size: 13px;
+  font-weight: bold;
+  background-color: rgb(243, 203, 22);
+  padding: 12px 40px;
+  border-radius: 10px;
+  border: none;
+}

@@ -1,10 +1,24 @@
-.header img{
+.top-header{
+    padding-top: 5px;
+    color: primary;
+    height: 35px;
+}
+.top-header a{
+    color:rgb(119, 194, 7);
+    font-weight: bold;
+}
+.top-header li{
+    display: flex;
+    gap: 4px;
+    margin-right: 20px;
+}
+.middle-header img{
     height: 80px;
 }
-.header{
+.middle-header{
     text-align: center;
 }
-.header nav{
+.middle-header nav{
     background-color: black;
     line-height: 40px;
     font-size: 20px;
@@ -32,4 +46,9 @@ nav a:hover {
     text-decoration: none;
     padding: 10px;
     background-color: rgb(119, 194, 7);
+}
+@media only screen and (max-width: 600px) {
+    .hideHeader{
+        display: none;
+    }
 }

@@ -1,0 +1,40 @@
+.shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: justify;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+  }
+.review-description{
+  color: #000000c7;
+  font-weight: 500;
+}
+  .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 300;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    vertical-align: middle;
+    max-width: 90px;
+    min-height: 90px;
+    transform-style: preserve-3d;
+    margin: 0 auto 17px;
+  }
+
+  .testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: linear-gradient(100deg, #845EC2, #BE93FD);
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 9px 18px rgba(0,0,0,0.12), 0px 5px 7px rgba(0,0,0,0.5);
+  }

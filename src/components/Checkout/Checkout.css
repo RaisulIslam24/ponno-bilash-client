@@ -1,0 +1,44 @@
+.checkout-content-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.checkout-details-div {
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.checkout-details-div > button {
+  width: 200px;
+}
+
+.checkout-details-div h2 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.main-button {
+  background-color: goldenrod;
+  width: 150px;
+  height: 30px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .checkout-content-div {
+    flex-wrap: wrap;
+  }
+  .checkout-details-div {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .checkout-details-div h2 {
+    text-align: start;
+  }
+}
